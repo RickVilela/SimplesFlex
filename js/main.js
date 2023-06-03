@@ -85,3 +85,50 @@
     
 })(jQuery);
 
+$(".download").on("click" , () =>{
+    Swal.fire(
+        'Obrigado!',
+        'Em breve entraremos em contato!',
+        'success'
+      )
+})
+
+$("#btnEnviarFormulario").on("click", () => {
+
+$( "#assunto" ).on( "change", function() {
+        var option = "";
+        $( "select option:selected" ).each(function() {
+        option += $( this ).text() + " ";
+        } );
+
+        let assunto = option;
+        let nome = $("#nome").val();
+        let email = $("#email").val();
+        let celular = $("#celular").val();
+        let mensagem = $("#mensagem").val();
+
+console.log(nome, email, celular, assunto, mensagem);
+
+  } ).trigger( "change" );
+
+    
+
+
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Enviado Com Sucesso!'
+      })
+})
