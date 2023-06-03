@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simples Flex</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" href="./img/interface/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,200&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary text-white d-none d-lg-flex">
+        <div class="container py-3">
+            <div class="d-flex align-items-center">
+               
+                <a href="index.html">
+                    <h2 class="text-white fw-bold m-0">Simples Flex</h2>
+                </a>
+                <div class="ms-auto d-flex align-items-center">
+                    <small class="ms-4"><i class="bi bi-geo-alt"></i> Rua Antonio de Castro, 710 Limeira-SP</small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>falecom@lightsystemsoft.com.br</small>
+                    <small class="ms-4"><i class="bi bi-telephone"></i> 0800 772 2208</small>
+                    <div class="ms-3 d-flex">
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.facebook.com/lightsystemsoftware" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.instagram.com/lightsysteminformatica/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href="https://www.linkedin.com/company/light-system-soft/mycompany/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="fw-bold m-0">Simples Flex</h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#sobre" class="nav-item nav-link active">Sobre</a>
+                        <a href="#vantagens" class="nav-item nav-link">O que Oferecemos</a>
+                        <a href="#interface" class="nav-item nav-link">Interface</a>
+                        <a href="https://www.youtube.com/@lightsystemsoftware9746/featured" class="nav-item nav-link" target="_blank">Tutoriais</a>
+                        <!-- <a href="project.html" class="nav-item nav-link">Parceiros</a> -->
+                        <a href="#depoimentos" class="nav-item nav-link">Depoimentos</a>
+                        <a href="#contato" class="nav-item nav-link">Contato</a>
+                    </div>
+                    <div class="ms-auto d-none d-lg-block">
+                        <img class="mx-3" src="./img/interface/logo.png" width="50px" height="50px">
+                        <a href="https://www.simplesflex.com.br/download/LSInstall.exe" class="btn btn-primary rounded-pill py-2 px-3 ">Download</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <!-- <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"> -->
+                    <img class="w-100" src="./img/interface/banner-simples-flex.jpg" alt="Image">
+                    <!-- <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="./img/interface/about.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-7 text-end">
+                                    <p class="fs-4 text-white animated slideInLeft">Bem-Vindo ao <strong>Simples Flex</strong>
+                                    </p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInLeft">Gerencie sua Oficina!</h1>
+                                    <a href=""
+                                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Veja
+                                        Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div> -->
+    <!-- Carousel End -->
+
+<a name="sobre"></a>
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 feature-row">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="img/icon/agil.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3">Ágil</h5>
+                        <p class="mb-0">Com ele você pode melhorar o desempenho do seu negócio, com mais agilidade e eficácia</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="img/icon/cpa.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3">Profissional</h5>
+                        <p class="mb-0">Software completo de gestão de oficinas mecânicas, além de profissional, é simples!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="img/icon/melhor-preco.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3">Preço Justo</h5>
+                        <p class="mb-0">Preço acessível e com um sistema de qualidade</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="img/icon/bate-papo-online.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3">Suporte Online</h5>
+                        <p class="mb-0">Suporte Humanizado através de Chat em Horário comercial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Features End -->
+
+   
+    <!-- About Start -->
+    <div class="container-xxl about my-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/watch?v=Cw60mZWOGd0" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white rounded-top p-5 mt-lg-5">
+                        <p class="fs-5 fw-medium text-primary">Sobre o Sistema</p>
+                        <h1 class="display-6 mb-4">Solução inteligente e eficiente para otimizar o gerenciamento de sua oficina</h1>
+                        <p class="mb-4">Solução inteligente e eficiente para otimizar o gerenciamento de sua oficina, seja ela de reparo automotivo, eletrônica, marcenaria ou qualquer outra atividade relacionada.
+
+                            Nosso software foi projetado para atender às necessidades específicas do setor de serviços, simplificando processos complexos e aumentando a produtividade de sua equipe.</p>
+                        <div class="row g-5 pt-2 mb-5">
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <a name="vantagens"></a>
+   
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">O que Oferecemos</p>
+                <h1 class="display-5 mb-5">Funcionalidades</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/chave-de-fenda.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Oficina</h4>
+                                <p class="mb-0">- Cadastro completo de veículos;<br>
+                                    - Cadastro de placas;
+                                    <br>
+                                    - Controle de agendamento de veículo;
+                                    <br>
+                                    - Controle de comissão de mecânico;
+                                    <br>
+                                    - Controle de comissão de parceiros;
+                                    <br>
+                                    - Controle de companhia de seguro;
+                                    <br>
+                                    - Check-list de entrada de veículo;
+                                    <br>
+                                    - Estoque de peças;
+                                    <br>
+                                    - Inclua fotos dos veículos ou peças;
+                                    <br>
+                                    - Laudo de entrada de veículo;
+                                    <br>
+                                    - Laudo de saída de veículo;
+                                    <br>
+                                    - Histórico completo de veículo</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/orcamento.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Financeiro</h4>
+                                <p class="mb-0">- Controle de caixa;
+                                    <br>
+                                    - Controle de comissão;
+                                    <br>
+                                    - Controle de cheque;
+                                    <br>
+                                    - Controle de cartão;
+                                    <br>
+                                    - Contas a pagar;
+                                    <br>
+                                    - Contas a receber;
+                                    <br>
+                                    - Controle débitos;
+                                    <br>
+                                    - Margem de lucro;
+                                    <br>
+                                    - Fluxo de caixa;
+                                    <br>
+                                    - Duplicatas;
+                                    <br>
+                                    - Emissão de faturas;
+                                    <br>
+                                    - Emissão de boletos;
+                                    <br>
+                                    - Emissão de nota fiscal. <br><br><br><br><br><br></p>
+                        </div>
+                        <!-- <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+           
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/etiqueta-de-preco.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Vendas</h4>
+                                <p class="mb-0">- Emissão de cupom fiscal e sat;
+                                    <br>
+                                    - Código de barras;
+                                    <br>
+                                    - Controle de comissão de vendedores;
+                                    <br>
+                                    - Controle de débitos;
+                                    <br>
+                                    - Mensagem de bloqueio para cliente;
+                                    <br>
+                                    - Vendas de serviço;
+                                    <br>
+                                    - Integrado ao contas a receber;
+                                    <br>
+                                    - Integrado ao pedido de venda;
+                                    <br>
+                                    - Orçamento. <br><br><br><br><br><br><br><br></p>
+                        </div>
+                        <!-- <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/seguro.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Compras</h4>
+                                <p class="mb-0">- Solicitação de compra;
+                                    <br>
+                                    - Cotação de compra;
+                                    <br>
+                                    - Pedido de compra;
+                                    <br>
+                                    - Baixa de pedido de compra;
+                                    <br>
+                                    - Necessidade de compra;
+                                    <br>
+                                    - Integrado ao contas a pagar;
+                                    <br>
+                                    - Histórico de compras;
+                                    <br>
+                                    - Lista de produtos por fornecedor.</p>
+                        </div>
+                        <!-- <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+               
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/estoque-pronto.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Estoque</h4>
+                                <p class="mb-0">- Controle de estoque;
+                                    <br>
+                                    - Conferência de estoque;
+                                    <br>
+                                    - Estoque mínimo;
+                                    <br>
+                                    - Controle de garantia;
+                                    <br>
+                                    - Histórico de movimentação;
+                                    <br>
+                                    - Impressão de etiquetas. <br><br><br><br></p>
+                        </div>
+                        <!-- <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative h-100">
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <img class="img-fluid" src="img/icon/lista-de-opcoes.png" alt="Icon">
+                            </div>
+                            <h5 class="mb-3">Outras Opções</h4>
+                                <p class="mb-0">- Diversos relatórios;
+                                    <br>
+                                    - Diversas configurações;
+                                    <br>
+                                    - Emissão de mala direta;
+                                    <br>
+                                    - Restrição de usuários;
+                                    <br>
+                                    - Multi usuários em rede;
+                                    <br>
+                                    - Cadastre e consulte produtos;
+                                    <br>
+                                    - Envio de WhatsApp;
+                                    <br>
+                                    - Entre outras opções. <br><br></p>
+                        </div> 
+                        <!-- <div class="service-btn rounded-0 rounded-bottom">
+                            <a class="text-primary fw-medium" href="">Read More<i
+                                    class="bi bi-chevron-double-right ms-2"></i></a>
+                        </div>  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <a name="interface"></a>
+    <!-- Interfaces Start -->
+    <div class="container-xxl pt-5">
+        <div class="container">
+            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Interfaces</p>
+                <h1 class="display-5 mb-5"></h1>
+            </div>
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/interface/agendamento.jpg" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/interface/agendamento.jpg"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">Agendamento de Serviços</a>
+                        <span>Acompanhe e gerencie o fluxo de trabalho da oficina com facilidade. Nosso software oferece um calendário integrado que permite agendar serviços, atribuir tarefas aos técnicos, controlar prazos e evitar conflitos de agendamento. Dessa forma, você pode maximizar a eficiência e garantir que todos os trabalhos sejam concluídos dentro do prazo. <br><br></span>
+                    </div>
+                </div>
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/interface/cadastro-de-cliente.jpg" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/interface/cadastro-de-cliente.jpg"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">Cadastro de Clientes</a>
+                        <span>Mantenha um banco de dados completo e atualizado de seus clientes, incluindo informações de contato, histórico de serviços e muito mais. Isso permite um atendimento personalizado e um relacionamento mais próximo com seus clientes, aumentando a fidelidade e o retorno deles à sua oficina. <br><br><br></span>
+                    </div>
+                </div>
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/interface/cadastro-de-produtos.jpg" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/interface/cadastro-de-produtos.jpg"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">Cadastro de Produtos</a>
+                        <span>Tenha um controle detalhado do seu estoque de peças e materiais. Nosso software permite o registro de todas as entradas e saídas, avisa sobre a necessidade de reposição de itens e ajuda a evitar a falta de estoque ou o acúmulo excessivo de peças. <br><br><br><br><br></span>
+                    </div>
+                </div>
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="img/interface/checklist.jpg" alt="">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/interface/checklist.jpg"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">Checklist de Serviços</a>
+                        <span>Sabemos como é importante seguir um processo estruturado e garantir a qualidade dos serviços prestados. Nosso software oferece a funcionalidade de checklist, permitindo que você crie listas de verificação personalizadas para cada tipo de serviço. Isso ajuda a garantir que todas as etapas necessárias sejam concluídas, reduzindo erros e melhorando a eficiência.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Interfaces End -->
+
+
+    <a name="contato"></a>
+    <!-- Quote Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-medium text-primary">Dúvidas?</p>
+                    <h1 class="display-5 mb-4">Fale com a gente!</h1>
+                    <p>Por favor, preencha o formulário para nos enviar um e-mail e retornaremos o mais breve possível.</p>
+                    <p class="mb-4"></p>
+                    <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
+                        <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
+                            <i class="bi bi-telephone" style="color: white"></i>
+                        </span>
+
+                        <span class="fs-5 fw-medium mx-4">19 99666-1932</span>
+                        
+                        
+                    </a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <h2 class="mb-4"></h2>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Seu nome</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
+                                <label for="mail">Seu E-mail</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
+                                <label for="mobile">Celular</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="service">
+                                    <option selected>Adquirir o Software</option>
+                                    <option value="">Consultar Valores</option>
+                                    <option value="">Dúvidas Funcionalidades</option>
+                                    <option value="">Dúvidas Gerais</option>
+                                </select>
+                                <label for="service">Escolha um assunto</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                    style="height: 130px"></textarea>
+                                <label for="message">Mensagem</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote Start -->
+
+
+    <a name="depoimentos"></a>
+    <!-- Testimonial Start -->
+    <div class="container-xxl pt-5">
+        <div class="container">
+            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Depoimentos</p>
+                <h1 class="display-5 mb-5">O que os clientes dizem sobre o nosso Software!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <!-- <img class="mb-4" src="img/testimonial-1.jpg" alt=""> -->
+                    <p class="mb-4">Software Auto Flex trouxe mais facildade e agilidade no gerenciamento da minha oficina, sistema completo e eficiente para a minha gestão. Atendimento ao suporte técnico qualificado.</p>
+                    <h5>Bruna</h5>
+                    <span class="text-primary">Check Up Car</span>
+                </div>
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <!-- <img class="mb-4" src="img/testimonial-2.jpg" alt=""> -->
+                    <p class="mb-4">O Auto Flex trouxe pra minha empresa agilidade, gestão e facilidade, estamos muito satisfeitos com o software.<br><br><br><br></p>
+                    <h5>Fran</h5>
+                    <span class="text-primary">Mecânica Caitano</span>
+                </div>
+                <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                    <!-- <img class="mb-4" src="img/testimonial-3.jpg" alt=""> -->
+                    <p class="mb-4">O software Auto Flex, agilizou o serviço, simplificou a emissão de NFE, melhorou a eficiência das operações e o atendimento ao cliente é sempre com pessoas qualificadas e muito empenhadas.</p>
+                    <h5>Junior</h5>
+                    <span class="text-primary">Só Freios</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Endereço</h4>
+                    <p class="mb-2"><i class="bi bi-geo-alt"></i> Rua Antonio de Castro, 710 JD Nova Europa, Limeira SP</p>
+                    <p class="mb-2"><i class="bi bi-telephone"></i> 0800 772-2208</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>falecom@lightsystemsoft.com.br</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Links</h4>
+                    <a class="btn btn-link" href="https://www.youtube.com/@lightsystemsoftware9746/featured" target="_blank">Tutoriais</a>
+                    <a class="btn btn-link" href="https://www.lightsystemsoft.com.br/ls/" target="_blank">Site Light System</a>
+                    <a class="btn btn-link" href="https://www.lightsystemsoft.com.br/ls/suporte.php" target="_blank">Área Clientes</a>
+                    <a class="btn btn-link" href="https://ls10.com.br/" target="_blank">Download Acesso Remoto</a>
+                    <a class="btn btn-link" href="">Suporte</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Horários</h4>
+                    <p class="mb-1">Segunda - Sexta</p>
+                    <h6 class="text-light">08:00 - 18:00h</h6>
+                    <p class="mb-1">Sábado</p>
+                    <h6 class="text-light">08:00 - 12:00h </h6>
+                    <p class="mb-1">Domingo</p>
+                    <h6 class="text-light">Fechado</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Novidades</h4>
+                    <p>Cadastre-se para receber Novidades</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Seu E-mail">
+                        <button type="button"
+                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium text-light" href="#">Simples Flex</a>, Todos os Direitos Reservados.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Desenvolvido por <a class="fw-medium text-light" href="https://www.lightsystemsoft.com.br/ls/" target="_blank">Light System Software</a>
+                     <a class="fw-medium text-light" href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a> -->
+
+
+    <!-- Whatsapp Button -->
+
+    <style>
+		.whatsapp-link {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 40px;
+			right: 40px;
+			background-color: #25d366;
+			color: #fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 1px 1px 2px #888;
+			z-index: 1000;
+		}
+ 
+		.fa-whatsapp {
+			margin-top: 16px;
+		}
+	</style>
+
+    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5519996661932" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+   
+
+</body>
+
+</html>
