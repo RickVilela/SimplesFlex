@@ -25,21 +25,6 @@
         }
     });
     
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
-
-
     // Modal Video
     var $videoSrc;
     $('.btn-play').click(function () {
@@ -86,11 +71,38 @@
 })(jQuery);
 
 $(".download").on("click" , () =>{
-    Swal.fire(
-        'Obrigado!',
-        'Em breve entraremos em contato!',
-        'success'
-      )
+
+async function download(){
+    const { value: email } = await Swal.fire({
+        title: 'Informe seu e-mail',
+        input: 'email',
+        inputLabel: 'Seu e-mail',
+        inputPlaceholder: ''
+      })
+      
+      if (email) {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'success',
+            title: 'Obrigado! Download Iniciado'
+          })
+
+        window.location.href = "https://www.simplesflex.com.br/download/LSInstall.exe"
+      }
+}
+
+download();
 })
 
 $("#btnEnviarFormulario").on("click", () => {
@@ -110,10 +122,6 @@ $( "#assunto" ).on( "change", function() {
 console.log(nome, email, celular, assunto, mensagem);
 
   } ).trigger( "change" );
-
-    
-
-
 
     const Toast = Swal.mixin({
         toast: true,
