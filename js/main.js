@@ -128,14 +128,15 @@ console.log(nome, email, celular, assunto, mensagem);
             data: {
                 nome: nome, 
                 email: email,
+                celular: celular,
+                assunto: assunto,
                 message: mensagem
             },
-            dataType: "application/json",
             success: function (response){
+
+                limparCampos()
                 
-                console.log(response)
-                
-                if(response.status == 200){
+                if(response.error == false){
                     const Toast = Swal.mixin({
                         toast: true,
                         position: 'top-end',
@@ -152,18 +153,42 @@ console.log(nome, email, celular, assunto, mensagem);
                         icon: 'success',
                         title: 'Enviado Com Sucesso!'
                       })
-                }
-                
-            },
-            error: function(err){
+                    }
+            },error: function(err){
+
                 console.log(err)
-            }
-            
+
+                limparCampos()
+                
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                          toast.addEventListener('mouseenter', Swal.stopTimer)
+                          toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                      })
+                      
+                      Toast.fire({
+                        icon: 'error',
+                        title: 'Erro ao Enviar! Verifique os dados'
+                      })
+                }
         })
             
-       
+
 
   } ).trigger( "change" );
 
     
 })
+
+function limparCampos(){
+    $("#nome").val('');
+    $("#email").val('');
+    $("#celular").val('');
+    $("#mensagem").val('');
+}
