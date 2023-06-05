@@ -135,7 +135,7 @@ console.log(nome, email, celular, assunto, mensagem);
                 
                 console.log(response)
                 
-                if(response.error == "false"){
+                if(response.status == 200){
                     const Toast = Swal.mixin({
                         toast: true,
                         position: 'top-end',
