@@ -6,7 +6,7 @@ $response = [
     'error' => false
 ];
 
-if(!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['mensagem'])) {
+if(!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['message'])) {
     $response['error'] = true;
     $response['message'] = 'Dados incompletos, verifique e tente novamente.';
     print json_encode($response);
