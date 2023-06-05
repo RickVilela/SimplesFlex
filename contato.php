@@ -31,7 +31,7 @@ $subject = 'Mensagem SimplesFlex';
 
 $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 $nome = filter_var($_POST['nome'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
-$menssagem = filter_var($_POST['mensagem'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+$menssagem = filter_var($_POST['message'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 
 $message = '
     <html>

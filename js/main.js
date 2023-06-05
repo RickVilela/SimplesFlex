@@ -128,28 +128,39 @@ console.log(nome, email, celular, assunto, mensagem);
             data: {
                 nome: nome, 
                 email: email,
-                mensagem: mensagem
+                message: mensagem
             },
-            dataType: "application/json"
+            dataType: "application/json",
+            success: function (response){
+                
+                console.log(response)
+                
+                if(response.error == "false"){
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                          toast.addEventListener('mouseenter', Swal.stopTimer)
+                          toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                      })
+                      
+                      Toast.fire({
+                        icon: 'success',
+                        title: 'Enviado Com Sucesso!'
+                      })
+                }
+                
+            },
+            error: function(err){
+                console.log(err)
+            }
             
-        }).done(() => {
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                      toast.addEventListener('mouseenter', Swal.stopTimer)
-                      toast.addEventListener('mouseleave', Swal.resumeTimer)
-                    }
-                  })
-                  
-                  Toast.fire({
-                    icon: 'success',
-                    title: 'Enviado Com Sucesso!'
-                  })
-            })
+        })
+            
        
 
   } ).trigger( "change" );
