@@ -1,13 +1,12 @@
 <?php
 
-
 header('Content-Type: application/json');
 
 $response = [
     'error' => false
 ];
 
-if(!isset($_POST['name']) or !isset($_POST['email']) or !isset($_POST['message'])) {
+if(!isset($_POST['nome']) or !isset($_POST['email']) or !isset($_POST['mensagem'])) {
     $response['error'] = true;
     $response['message'] = 'Dados incompletos, verifique e tente novamente.';
     print json_encode($response);
@@ -31,8 +30,8 @@ if($_POST['message'] == '') {
 $subject = 'Mensagem SimplesFlex';
 
 $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-$nome = filter_var($_POST['name'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
-$menssagem = filter_var($_POST['message'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+$nome = filter_var($_POST['nome'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+$menssagem = filter_var($_POST['mensagem'], FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 
 $message = '
     <html>
@@ -52,7 +51,9 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 // $to = "Light System <falecom@lightsystemsoft.com.br>";
-$to = "Light System <rogerio@lightsystemsoft.com.br>";
+$to = "Light System <henriquevilela@lightsystemsoft.com.br>";
+
+// rogerio@lightsystemsoft.com.b
 
 // Additional headers
 $headers .= "To: $to" . "\r\n";
