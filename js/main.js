@@ -77,7 +77,8 @@ async function download(){
         title: 'Informe seu e-mail',
         input: 'email',
         inputLabel: 'Seu e-mail',
-        inputPlaceholder: ''
+        inputPlaceholder: '',
+        confirmButtonColor: '#dc3545'
       })
       
       if (email) {
