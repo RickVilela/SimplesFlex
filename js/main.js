@@ -82,6 +82,20 @@ async function download(){
       })
       
       if (email) {
+
+        $.ajax({
+            url: "./userDownload.php",
+            type: "POST",
+            data: { 
+                email: email
+            },
+            dataType: 'json'
+        }).done((result) =>{
+            console.log(result)
+        })
+
+        console.log(email)
+
         const Toast = Swal.mixin({
             toast: true,
             position: 'top-end',
